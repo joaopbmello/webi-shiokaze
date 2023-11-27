@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Garet';
+    src: url('../fonts/Garet-Book.woff2') format('woff2'),
+         url('../fonts/Garet-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Garet', sans-serif;
+}
+
+footer {
+    background-color: #1B1C1F;
+}
+
+.text-custom {
+    letter-spacing: .370rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bg-image {
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/fuji.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+}
+
+.tc-h1 {
+    color: #F9891E;
+}

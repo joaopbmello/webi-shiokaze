@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Cardápio - Shiokaze Obento</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-custom" href="index.html">
+        <img src="assets/logo.png" alt="Logo" height="50" class="d-inline-block">
+        Shiokaze
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cardapio.html">Cardápio</a>
+          </li>
+        </ul>
+        <button class="btn navbar-btn position-relative">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+          </svg>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container mt-5">
+    <h1 class="text-center mb-4">Cardápio</h1>
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <h2 class="mb-0">Obento</h2>
+      </div>
+      <div class="card-body row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="assets/obento chicken katsu.png" class="card-img-top" alt="Obento Chicken Katsu">
+            <div class="card-body">
+              <h5 class="card-title">Obento Chicken Katsu</h5>
+              <p class="card-text">Frango empanado, arroz, tempura de legumes, gyoza</p>
+              <p class="card-text">Preço: R$ 30,00</p>
+              <button class="btn btn-primary btn-adicionar-sacola" data-nome="Obento Chicken Katsu" data-preco="30.00">
+                Adicionar à Sacola</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="assets/obento karage.png" class="card-img-top" alt="Obento Karage">
+            <div class="card-body">
+              <h5 class="card-title">Obento Karage</h5>
+              <p class="card-text">Frango empanado estilo japonês, arroz, tempura de legumes, gyoza</p>
+              <p class="card-text">Preço: R$ 33,00</p>
+              <button class="btn btn-primary btn-adicionar-sacola" data-nome="Obento Karage" data-preco="33.00">
+                Adicionar à Sacola</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="assets/obento ebi furai.png" class="card-img-top" alt="Obento Ebi Furai">
+            <div class="card-body">
+              <h5 class="card-title">Obento Ebi Furai</h5>
+              <p class="card-text">Camarão à milanesa, arroz, tempura de legumes, gyoza</p>
+              <p class="card-text">Preço: R$ 38,00</p>
+              <button class="btn btn-primary btn-adicionar-sacola" data-nome="Obento Ebi Furai" data-preco="38.00">
+                Adicionar à Sacola</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <h2 class="mb-0">Kare</h2>
+      </div>
+      <div class="card-body row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="assets/kare chicken katsu.png" class="card-img-top" alt="Kare Chicken Katsu">
+            <div class="card-body">
+              <h5 class="card-title">Kare Chicken Katsu</h5>
+              <p class="card-text">Kare, arroz, frango à milanesa.</p>
+              <p class="card-text">Preço: R$ 35,00</p>
+              <button class="btn btn-primary btn-adicionar-sacola" data-nome="Kare Chicken Katsu" data-preco="35.00">
+                Adicionar à Sacola</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="assets/kare karage.png" class="card-img-top" alt="Kare Karage">
+            <div class="card-body">
+              <h5 class="card-title">Kare Karage</h5>
+              <p class="card-text">Kare, arroz, frango empanado estilo japonês.</p>
+              <p class="card-text">Preço: R$ 36,00</p>
+              <button class="btn btn-primary btn-adicionar-sacola" data-nome="Kare Karage" data-preco="36.00">
+                Adicionar à Sacola</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="assets/kare ebi furai.png" class="card-img-top" alt="Kare Ebi Furai">
+            <div class="card-body">
+              <h5 class="card-title">Kare Ebi Furai</h5>
+              <p class="card-text">Kare, arroz, camarão à milanesa.</p>
+              <p class="card-text">Preço: R$ 41,00</p>
+              <button class="btn btn-primary btn-adicionar-sacola" data-nome="Kare Ebi Furai" data-preco="41.00">
+                Adicionar à Sacola</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header">
+        <h2 class="mb-0">Yakisoba</h2>
+      </div>
+      <div class="card-body row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="assets/yakisoba vegetariano.png" class="card-img-top" alt="Yakisoba Vegetariano">
+            <div class="card-body">
+              <h5 class="card-title">Yakisoba Vegetariano</h5>
+              <p class="card-text">Macarrão, legumes e molho.</p>
+              <p class="card-text">Preço: R$ 35,00</p>
+              <button class="btn btn-primary btn-adicionar-sacola" data-nome="Yakisoba Vegetariano" data-preco="35.00">
+                Adicionar à Sacola</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="assets/yakisoba frango.png" class="card-img-top" alt="Yakisoba Frango">
+            <div class="card-body">
+              <h5 class="card-title">Yakisoba Frango</h5>
+              <p class="card-text">Macarrão, legumes, frango e molho.</p>
+              <p class="card-text">Preço: R$ 38,00</p>
+              <button class="btn btn-primary btn-adicionar-sacola" data-nome="Yakisoba Frango" data-preco="38.00">
+                Adicionar à Sacola</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="assets/yakisoba carne.png" class="card-img-top" alt="Yakisoba Carne">
+            <div class="card-body">
+              <h5 class="card-title">Yakisoba Carne</h5>
+              <p class="card-text">Macarrão, legumes, carne e molho.</p>
+              <p class="card-text">Preço: R$ 41,00</p>
+              <button class="btn btn-primary btn-adicionar-sacola" data-nome="Yakisoba Carne" data-preco="41.00">
+                Adicionar à Sacola</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="itemAdicionadoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Item Adicionado</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Item adicionado à sacola com sucesso!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-3">
+    <div class="container">
+      <img src="assets/logo2.png" alt="Logo" height="150" class="mb-2">
+      <p>&copy; 2023 Shiokaze Obento - Comida Oriental.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
